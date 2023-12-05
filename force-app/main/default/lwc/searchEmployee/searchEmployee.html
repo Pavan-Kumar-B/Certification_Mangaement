@@ -1,0 +1,25 @@
+<template>
+    <lightning-input 
+        type="text"
+        label="Employee Name"
+        value={mpName}
+        onchange={handleOnChangeEmpName}></lightning-input>
+        
+        <lightning-input 
+        type="email"
+        label="Employee Email"
+        value={empEmail}
+        onchange={handleOnChangeEmpEmail}></lightning-input>
+
+        <lightning-button 
+        variant="brand"
+        label="Search Employee"
+        title="Click here to initiate Serach"
+        onclick={initiateSearch}></lightning-button>
+        
+        <lightning-button variant="brand"
+        label="Clear Search"
+        title="Click here to Clear Seach Results"
+        onclick={clearSearch}>
+        </lightning-button>
+</template>
